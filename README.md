@@ -22,7 +22,7 @@
 - Building shelter and fire reduces survival damage, allowing the player to rest and advance to the next day. The cycle repeats with increasing environmental challenges as seasons progress.
 
 3. Breakdown Diagram
-<img width="730" height="493" alt="Screenshot 2026-04-01 at 6 59 56 PM" src="https://github.com/user-attachments/assets/c009505d-6a28-4127-a6d0-67c6dfc00937" />
+<img width="813" height="533" alt="Screenshot 2026-04-01 at 7 32 57 PM" src="https://github.com/user-attachments/assets/420245dc-b486-4c22-92c0-bf8a5a910e8f" />
 
 
 
