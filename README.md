@@ -21,7 +21,10 @@
 - Core actions include exploring to discover materials, gathering via interaction, crafting items, and bartering with a wandering trader.
 - Building shelter and fire reduces survival damage, allowing the player to rest and advance to the next day. The cycle repeats with increasing environmental challenges as seasons progress.
 
-3. ![Breakdown Diagram]()
+3. Breakdown Diagram
+<img width="730" height="493" alt="Screenshot 2026-04-01 at 6 59 56 PM" src="https://github.com/user-attachments/assets/c009505d-6a28-4127-a6d0-67c6dfc00937" />
+
+
 
 
 ## W2
