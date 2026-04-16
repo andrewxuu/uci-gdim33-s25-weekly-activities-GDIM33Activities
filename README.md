@@ -40,11 +40,21 @@ Updated Breakdown Diagram
 
 ### Activity 2 
 
-1. Why is it advantageous to save the event name for the explore-to-dialogue state transitions as Scene variable ("clickNpcEventName")?
+1. Saving "clickWalrus" as a Scene variable named clickNpcEventName means any graph in the scene can reference that same variable instead of typing the string manually.
+   If the event name ever needs to change, you only need to update it in one place instead of than hunting down every graph that hardcoded the string.
    
-3. Describe how using at least one Debug.Log() node helped you test your Graphs at an intermediate step.
-    
-5. Is the Set Cursor Lock State relevant to your Vertical Slice? Why or why not?
+3. After wiring up the OnMouseDown event in the walrusW3 Graph, I added a Debug.Log node directly after the custom event trigger. Before I had any feedback in
+   the game, I could open the Console and confirm whether clicking the walrus was actually firing the event at all. When the transition Debug.Log in the gameStateW3
+   Graph also printed, I knew both ends of the chain were working: the walrus was sending the event and the state machine was receiving it. Without those nodes, it
+   would be hard to pinpoint the location of the error in this chain of nodes. 
    
-7. Is the concept of a "game state" relevant to your Vertical Slice? Why or why not?
-
+5. The cursor lock state is relavent to my vertical slice because the game is played in a third person perspective. The cursor is locked and hidden during the main
+   exploration so the player isnt distracted by a visible pointer while moving and exploring the environment. The cursor will be unlocked when the player needs to
+   do any UI interactions, like opening the crafting menu or interacting with oth UI elements. This activity helped me better understand what cursor lock is and
+   how to implement it in my vertical slice. 
+   
+7. Game states are highly relevant to my vertical slice. The project has several states that require different systems to be active or inactive; an Exploration state
+   where the player moves freely and survival meters tick down, a Crafting state where the world pauses for UI interaction, a Death state where movement stops and the
+   player respawns at the shelter, a Day Transition between each of the three in-game days, and a Win state after the third day is survived. A state machine is the best
+   fit for managing all of this, using On Enter State to enable or disable the right components and custom events to trigger transitions. This activity helped me understand
+   how to better implement this into my vertical slice. 
