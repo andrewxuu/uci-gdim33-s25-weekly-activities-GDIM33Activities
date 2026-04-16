@@ -25,8 +25,6 @@
 <img width="813" height="533" alt="Screenshot 2026-04-01 at 7 32 57 PM" src="https://github.com/user-attachments/assets/420245dc-b486-4c22-92c0-bf8a5a910e8f" />
 
 
-
-
 ## W2
 
 ### Activity 2 
@@ -38,7 +36,7 @@
 ### Activity 1 
 Updated Breakdown Diagram 
 
-<img /> 
+<img width="1047" height="720" alt="Screenshot 2026-04-15 at 7 27 51 PM" src="https://github.com/user-attachments/assets/47eb01d1-b827-4e69-b25a-52bf641e8799" />
 
 ### Activity 2 
 
