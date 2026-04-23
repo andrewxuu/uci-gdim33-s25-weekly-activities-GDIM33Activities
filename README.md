@@ -73,6 +73,8 @@ Group Members: Pinhsuan Wang, Sonia Mangat, Rebecca Han
 4. The animations walking foward sometimes is loading the backwards walking animation. The walking animation only seems to be loading correctly when facing true north. There also seems to be some holes in the map generation near the rock/hill assets. The player doesnt fall through but there is a visual discrepency with being a hole in the ground. 
 
 ### Activity 2 
-1. Assuming this activity is completed by a programmer, could a writer add more dialogue to this setup without writing any code? Why or why not?
-2. What limit is there to the number of dialogue nodes that the writer could create without writing any code?
-3. In your own words, describe the purpose of the "Regenerate Nodes" button.
+1. Yes, this can be complteted without writing a single line of code. Since each dialogue node is a Scriptable Object, the writer can create new ones directly in the Unity Project window, fill in the Line and Reply options
+   and link the nodes together through the inspector without having to touch any scripts, graphs or code. 
+3. There should be no limit. The writer can create as many dialogue nodes as they want since each one is just a Scriptable Object asset.
+4. Regenerating the nodes refresehes the Visual Scripting Nodes to match the current state of their scripts. If anything is modified in the class, the nodes referencing that class in the graph is now outdated.
+   Regenerating the nodes updates them to the latest version so the graph is still in sync. Its similar to refreshing a tab to see new changes. 
