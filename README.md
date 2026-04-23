@@ -58,3 +58,21 @@ Updated Breakdown Diagram
    player respawns at the shelter, a Day Transition between each of the three in-game days, and a Win state after the third day is survived. A state machine is the best
    fit for managing all of this, using On Enter State to enable or disable the right components and custom events to trigger transitions. This activity helped me understand
    how to better implement this into my vertical slice. 
+
+## W4 
+
+### Activity 1 
+Playtesting 
+Group Members: Pinhsuan Wang, Sonia Mangat, Rebecca Han
+
+1. The current build is basic movement with animations attached to WASD. The player should be able to walk in the procedurally generated world. The camera should be able
+   to follow the player around from a third person perspective. The movement should be still be intuitive no matter which direction the player is looking.
+   
+3. Goals for playtest: Ensuring animations load correctly with player movement. Ensuring camera perspective is correct and is following correctly.
+  
+4. The animations walking foward sometimes is loading the backwards walking animation. The walking animation only seems to be loading correctly when facing true north. There also seems to be some holes in the map generation near the rock/hill assets. The player doesnt fall through but there is a visual discrepency with being a hole in the ground. 
+
+### Activity 2 
+1. Assuming this activity is completed by a programmer, could a writer add more dialogue to this setup without writing any code? Why or why not?
+2. What limit is there to the number of dialogue nodes that the writer could create without writing any code?
+3. In your own words, describe the purpose of the "Regenerate Nodes" button.
