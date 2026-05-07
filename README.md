@@ -77,4 +77,24 @@ Group Members: Pinhsuan Wang, Sonia Mangat, Rebecca Han
    and link the nodes together through the inspector without having to touch any scripts, graphs or code. 
 3. There should be no limit. The writer can create as many dialogue nodes as they want since each one is just a Scriptable Object asset.
 4. Regenerating the nodes refresehes the Visual Scripting Nodes to match the current state of their scripts. If anything is modified in the class, the nodes referencing that class in the graph is now outdated.
-   Regenerating the nodes updates them to the latest version so the graph is still in sync. Its similar to refreshing a tab to see new changes. 
+   Regenerating the nodes updates them to the latest version so the graph is still in sync. Its similar to refreshing a tab to see new changes.
+
+## W6
+
+### Activity 1
+1. Things that are new in this version of the vertical slice is the campfire and cut scene. When the player is interacting with the campfire at night, they are able to speed up the night cycle. Players are also able to now
+   craft items in the UI screen. The only craftable item currently is the campfire. 
+2. [Itch Link](https://andrewxuu.itch.io/snow-peak-demo-3) 
+3. Testing Goals:
+   - Main priority: checking if inventory system works as well as crafting system. 
+   - Secondary priority: checking if campfire cutscene works, camera pulls into correct position and timelapse occurs.
+4. Notes:
+   - the campfire is missing UI to tell player to trigger the scene
+   - issues with placement mechanic, possible collider issue
+   - should add some UI notification to tell player campfire sleep interaction is only available at night
+
+### Activity 2 
+1. Multiply makes the color darker and less saturated because the RGB values are stores as floats between 0.0 and 1.0. When two of these values are multiplied, they will always produce a result smaller than or equal to either input. Only way for them to remain bright is if one of the numbers is fixed at 1.0.
+2. More translucent (lower alpha). It is the same idea as the answer above, the two float values are between 0.0 and 1.0. When they are multiplied, their values will always produce a result smaller than or equal to either input unless one value is 1.0.
+3. The UV coordinates come from the mesh. When the 3d model is unwrapped, it forms a flat 2d map. These UV coordinates are stroed as vertex data on the mesh. 
+4. I think there is something satisfying about playing around with the visuals. I think its interesting to be able to make such visual changes like tinting, transparency, blending and color manipulation in a predictable and reproducable way with just simple arithemetic. I think this gives me a better appreciation for math and its relation to art. 
