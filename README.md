@@ -97,4 +97,15 @@ Group Members: Pinhsuan Wang, Sonia Mangat, Rebecca Han
 1. Multiply makes the color darker and less saturated because the RGB values are stores as floats between 0.0 and 1.0. When two of these values are multiplied, they will always produce a result smaller than or equal to either input. Only way for them to remain bright is if one of the numbers is fixed at 1.0.
 2. More translucent (lower alpha). It is the same idea as the answer above, the two float values are between 0.0 and 1.0. When they are multiplied, their values will always produce a result smaller than or equal to either input unless one value is 1.0.
 3. The UV coordinates come from the mesh. When the 3d model is unwrapped, it forms a flat 2d map. These UV coordinates are stroed as vertex data on the mesh. 
-4. I think there is something satisfying about playing around with the visuals. I think its interesting to be able to make such visual changes like tinting, transparency, blending and color manipulation in a predictable and reproducable way with just simple arithemetic. I think this gives me a better appreciation for math and its relation to art. 
+4. I think there is something satisfying about playing around with the visuals. I think its interesting to be able to make such visual changes like tinting, transparency, blending and color manipulation in a predictable and reproducable way with just simple arithemetic. I think this gives me a better appreciation for math and its relation to art.
+
+## W7 
+
+### Activity 1 
+1. The vertex color comes from the mesh itself. The color is stored in each vertex as part of its mesh data. 
+2. The color on the shiba in step 3 is  blended at the edges becasey the color is defined only at each vertex not polygon.
+3. The shiba from step 3 less detailed because the vertex color is limited by the number of vertices in the mesh. There can only be as many distinct color points as there are vertices. The textures can have far more pixels than a mesh has vertices, hense they carry much more detail in the color. 
+4. Yes, the back left leg looks wrong. The color doesnt match the normla direction pattern. 
+5. You could debug using the UV coordinates by outputting them as a color. This would help verify that the UVs are laid out correctly and not distorted, flipped or missing. This can help explain texture stretching or misalignment. 
+6. the light direction vector points towards the shiba, while the surface normals point away from it. The two vectors are pointing in opposite diretions, creating a negative dot product making lit areas appear dark. The solution is to multiply the light by -1 to fix this.
+7. I think we set the blend mode to additive for the fire effect in step 5 because the additive blending adds the shader's color on top of whatever is behind it. It makes bright areas glow and darker/transparent areas invisible. This is ideal for the fire because the fire emits light and brightens the scene. 
