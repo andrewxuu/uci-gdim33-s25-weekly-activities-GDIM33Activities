@@ -109,3 +109,45 @@ Group Members: Pinhsuan Wang, Sonia Mangat, Rebecca Han
 5. You could debug using the UV coordinates by outputting them as a color. This would help verify that the UVs are laid out correctly and not distorted, flipped or missing. This can help explain texture stretching or misalignment. 
 6. the light direction vector points towards the shiba, while the surface normals point away from it. The two vectors are pointing in opposite diretions, creating a negative dot product making lit areas appear dark. The solution is to multiply the light by -1 to fix this.
 7. I think we set the blend mode to additive for the fire effect in step 5 because the additive blending adds the shader's color on top of whatever is behind it. It makes bright areas glow and darker/transparent areas invisible. This is ideal for the fire because the fire emits light and brightens the scene. 
+
+
+## W8
+
+### Activity 1 
+[Itch Build](https://andrewxuu.itch.io/snow-peak-demo-4)
+
+Updates since last build
+- Players are able to craft tools like the axe and pickaxe. These two items should be able to speed up the chopping progress. The big update since last build is the snow shader and particle effect. During night, snow will build up which will affect the player movement speed. This will also lower the player warmth bar, when the player is too cold they will freeze and lower their health bar. Players are able to stay warm during the night by being near the campfire and fueling the campfire with wood. 
+
+Playtesting Goals: 
+-Testing shader and particle effect functionality 
+-Balancing the player crafting and seeing if the item is being properly holding in the player hands 
+-Checking warmth and health bar functionality
+-Checking if fireplace warmth system works at night 
+
+Playtesting Notes: 
+1. Snow Shader & Particle Effects
+   - The snow looked really cool at night, didn't expect it to start building up on the ground
+   - Wasn't sure at first if the snow was affecting my movement — it felt slower but I thought my character was just tired
+   - No visual indicator that snow is slowing me down, would be nice to have some kind of hint
+   - Snow particles felt a little heavy/dense, almost too much on screen at once
+   - Transition from day to night was smooth, liked how the snow gradually picked up
+2. Crafting & Item Holding
+   - Player item holding position is weird
+   - Crafting felt easy and straight foward
+   - Could balance item crafting cost more
+3. Warmth & Health Bar
+   - Warmth bar drained pretty fast once night hit, felt a little punishing
+   - Wasn't immediately obvious what the warmth bar was — mistook it for a stamina bar at first
+   - When it froze, it wasn't clear why my health was dropping, no tooltip or feedback
+   - Health bar dropping felt very sudden, went from fine to almost dead quickly
+   - Would appreciate some kind of warning before the freezing starts
+4. Fireplace Warmth System
+   - Works lol.
+   - Warmth radius felt decent
+  
+
+  
+
+
+
