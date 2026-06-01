@@ -146,7 +146,25 @@ Playtesting Notes:
    - Works lol.
    - Warmth radius felt decent
   
+## W9
+### Activity 1 
 
+Chosen Game: Hades
+
+Effect 1: Enemy Damage Flash
+- Lives on the enemy's material, not the whole screen
+- On hit, a number gets set to 1 and fades back to 0
+- The shader blends the sprite toward white based on that number
+- Turned on/off by the hit event in gameplay code
+  
+Effect 2:  Hover Glow
+- Lives on each card's material, boosted by the scene's bloom
+- Hovering raises a brightness value; the color is set per-god
+- Turned on/off by the mouse hover event
+
+Effect 3: Death Desaturation
+- Full-screen effect, desaturation, dark vignette, and red tint layered together
+- Normally off; fades in when the player dies
   
 
 
